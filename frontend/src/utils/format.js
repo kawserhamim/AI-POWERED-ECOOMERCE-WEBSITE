@@ -1,0 +1,28 @@
+// Centralised helpers for formatting prices, dates, etc.
+export const fmtMoney = (amount = 0, currency = 'BDT') =>
+  new Intl.NumberFormat('en-US', { style: 'currency', currency }).format(amount);
+
+export const fmtDate = (value) => {
+  if (!value) return '';
+  const d = new Date(value);
+  return d.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+};
+
+// Backend uses an enum: created | processing | shipped | delivered | cancelled
+export const statusColors = {
+  created: 'bg-gray-100 text-gray-700',
+  processing: 'bg-blue-100 text-blue-700',
+  shipped: 'bg-indigo-100 text-indigo-700',
+  delivered: 'bg-green-100 text-green-700',
+  cancelled: 'bg-red-100 text-red-700',
+  paid: 'bg-green-100 text-green-700',
+  pending: 'bg-yellow-100 text-yellow-700',
+  failed: 'bg-red-100 text-red-700',
+  refunded: 'bg-gray-200 text-gray-700',
+};
+
+export const statusColor = (s) => statusColors[s] || 'bg-gray-100 text-gray-700';

@@ -1,0 +1,126 @@
+# ───────────────────────────────────────────────
+# Dependencies
+# ───────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# ───────────────────────────────────────────────
+# Environment Variables  ← NEVER commit these
+# ───────────────────────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.production
+
+# ───────────────────────────────────────────────
+# Build Output
+# ───────────────────────────────────────────────
+dist/
+build/
+out/
+.vite/
+
+# ───────────────────────────────────────────────
+# Logs
+# ───────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ───────────────────────────────────────────────
+# OS & Editor
+# ───────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+
+# ───────────────────────────────────────────────
+# Testing
+# ───────────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ───────────────────────────────────────────────
+# Package Manager Lock Files (keep one, ignore rest)
+# ───────────────────────────────────────────────
+# Uncomment whichever you are NOT using:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ───────────────────────────────────────────────
+# Runtime / Temp
+# ───────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid.lock
+
+# ───────────────────────────────────────────────
+# TypeScript
+# ───────────────────────────────────────────────
+*.tsbuildinfo
+
+# ───────────────────────────────────────────────
+# Uploads / Media (if stored locally in dev)
+# ───────────────────────────────────────────────
+uploads/
+public/uploads/
+
+# ───────────────────────────────────────────────
+# Database (local dev dumps)
+# ───────────────────────────────────────────────
+*.sqlite
+*.sqlite3
+dump.rdb
+
+# ───────────────────────────────────────────────
+# SSL / Certificates
+# ───────────────────────────────────────────────
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# ───────────────────────────────────────────────
+# Docker (local overrides only)
+# ───────────────────────────────────────────────
+docker-compose.override.yml
+
+# ───────────────────────────────────────────────
+# Misc
+# ───────────────────────────────────────────────
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tgz
+.node_repl_history
